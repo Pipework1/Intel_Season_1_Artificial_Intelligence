@@ -51,6 +51,8 @@ for c in range(len(category)):
     df_titles = pd.concat([df_titles, df_section_title], ignore_index=True)
     df_titles.to_csv('./crawling_data/naver_news_{}_{}_last.csv'.format(datetime.datetime.now().strftime('%Y%m%d'), category[c]), index=False)
 
+driver.close()
+
 # //*[@id="section_body"]/ul[1]/li[1]/dl/dt[2]/a
 # //*[@id="section_body"]/ul[2]/li[1]/dl/dt[2]/a
 # //*[@id="paging"]/a[1]
