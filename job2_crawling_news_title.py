@@ -20,7 +20,7 @@ service = ChromeService(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 category = ['Politics','Economic','Social','Culture','World','Science']
-pages = [110, 110, 110, 75, 110, 72]
+pages = [5, 5, 5, 5, 5, 5]
 df_titles = pd.DataFrame()
 
 for c in range(len(category)):
